@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Layout tests</title>
+    <style>
+    body {margin : 0;
+    }
+    .testdiv{
+    display: block;
+    Margin: 0px;
+    border: 0px dashed red;
+    outline: green ridge 0px;
+    padding 15px
+    background-color: #aaaaaa;
+    }
+    </style>
+    </html>
