@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> html forms</title>
+</head>
+<body>
+this is the body
+	<p>I cannot handle the data!! because I am only html</p>
+	<p>where is my form handler? try php perl cgi asp asp.net and other data handlers.</p>
+	<p>lets learn how to make a form</p>
+	<form>all of the items in between the form tag are part of the form.<p>
+		need an action. pick a url for the form data to land in within brackets - form action="url.php" method: 'get' OR 'post' - </p>
+		<p> GET:: when you get forms, the method 'get' is sent in the header and appended to the url. this is <strong>not</strong> a secure method of transferring data and can only be 3000 characters or less long.</p>
+		<p>creates a query string that is formatted like - formhandler.php?name=Kevin&age=15&married=yes</p>
+		<p>POST:: none of the form informtion is included in the header or url. there is no limit on the length as it is sent in the body. post method allows for encrypted data in the https area. data is not held in the handler from previous submissions</p>
+		<p>forms should have an id to help control and find them as well as make javascript options more interesting.</p>
+		<p>autocomplete: if there are items the broser knows, it may auto complete your entry in forms.</p>
+		<p>CHARSET that is allowed should be specified. UTF8 is the replacement for ascii and allows for all language types to be entered into your form.</p>
+		<p>onsubmit is in javascript land, but is a form item/command for use. usually calls a javascript reference to check the data for validity AND gives a return value. If the script value is true, the form will be submitted. If false, there will be a warning message (you write) for better/more useful data.
+		Called EVENT HANDLER (onsubmit is an example)</p>
+		<p>Within the form, a series of inputs are used, it is a self closing tag and can be specified by style.
+		<input type="checkbox">do you really want to hurt me?
+		<input type="button">can style the button in javascript</p>
+		<p><input type="email">Enter your email address for more information.
+			<br/>
+			<input type="password">to share, enter your password.<br/>
+			<input type="tel">Let us call you with great offers, enter your phone number.<br/>
+			<input type="submit">Submit the form to complete.
+		<br/>
+			<br/>
+			With hidden form items, you can program information that comes with the submit, however it can be seen in the code and can change your info values for the submission. source and  value are usually included with the hidden form information.
+			<br/>
+			input type image defines an image as the submit button.<br>
+			most input types shoul dhave an id to help your server determine what the data is and where it should be placed. ID is a unique identifier that allows for easy searching among the data.
+			<br/>NAME is the variable name that is used when the data is sent to the server. each input name should be unique, or the data will overwrite itself.<br/>
+			type and name are minimum needs for form inputs except for submit.<br/>
+			default values will show up in the form field and can be used as hint text. javasccript allows the look of the form to change dynamically.
+			<br/>
+			required will not allow the form to be submitted without data entered into the field. it is within the input tag, required=true gives you a common sense view of the form field items when viewing the html. IF you have a default value, the required tag, does not help get the information you want because the field has a value.
+			<br/>
+			autofocus is an html form tag that places the cursor where you want the user to begin entering information. when you tab trough a form, you are tabbing through the html not the css.
+			<br/>
+			target "framename" allows you to randomly name an anchor or link. so that when clicked the results will show on a pop-up window, but if they click on another item with the same framename the contents will be replaced with the new page or data without creating a new window.
+			<br/>
+			PATTERN is the 'regexp' - regular expression allows you to create a rule/use a rule that exists to apply to any field input. Old School computer syntax that the input must meet for the input to be accepted.
+			<br/>
+			Labels are attached to inputs using id and this allows screen readers to understand the form fields for ADA requirements.
+			<br/><label for="name">Name: </label>    
+			<input type="text" id='name'>
+			example of labels on form fields.
+			<br/>
+			<input type="button" value="Click Me!">
+			<input type="submit" value="Send Form">
+		</p>
+		<p>client side check helps user give you good data. server side check is used to keep malicious data from attacking my server.<br>
+			html and css have no behavior associated with them. javascript controls the behaviours. html5 has some new behaviour with the added tags, but this is counterproductive to the quid pro quo for developers.
+			<br> 
+			form items are grouped by their NAME not that they are in proximity to each other.
+			<br/>
+			the value of the item does not need to match the name of the form item because you are writing oth client and server side, you can assign simple values the help interpret the form data and save processing speed.
+			<br/>
+			drop down list is not an input type. all other from items are input types. weird. So, for a drop down use 'select'. this can only contain other elements of type option.
+			<select name="dropdown" id='firstlist'>
+			<option value=''>Please choose one</option><option value="one">One</option><option value="Two">Two</option><option value="three">Three</option><option value='nine'>Nine</option><option value='none'>None of the Above</option>
+			</select>
+		</p>
+		<p>you can use the multiple option in the select tag that will open up the list with a scroll bar so users may be able to choose more than on option.
+			<br/>
+			Forms imply thre is a submit and you can have input items that live outside of a form tag, bu you must have a handler to process the input.
+			<br/>
+			
+		</p>
+	</form>
+	anythin that uses javascript will be within the html but have a script tag around it.
+	
+	<script type="text/javascript">
+	var x=document.getElementById('firstlist') value=0;
+		if (x){getSelection()}
+		
+	</script>
+	
+	<h1>ADD ID to your elements to enhance your code for javascript!!!!!</h1>
+	<br/>
+	
+</body>
+</html>
